@@ -50,8 +50,10 @@ function App() {
 
 
   const products =  [
-    {id: 1, img: "https://ecomarket.ru/imgs/producthttpss/5444/thumb/klubnika-sezonnaya-1.jpg", name: "Клубника", price: 127},
-    {id: 2, img: "https://ecomarket.ru/imgs/products/22406/thumb/franui-malina-v-molochnom-shokolade-morozhennoe-150g--ispaniya-1.jpg", name: "Малина в молоном шоколаде fdsfsdfsdfsdfsdfssdfdfsfsdfdsfsdsddfsdfds", price: 725}
+    {id: 1, img: "https://ecomarket.ru/imgs/products/346/thumb/mango-tayskoe-_1726598467.jpg", name: "Манго Тайское", price: 425},
+    {id: 2, img: "https://ecomarket.ru/imgs/products/22406/thumb/franui-malina-v-molochnom-shokolade-morozhennoe-150g--ispaniya-1.jpg", name: "Малина в молоном шоколаде", price: 725},
+    {id: 3, img: "https://ecomarket.ru/imgs/products/21093/thumb/farsh-iz-file-lososya_2-1.jpeg", name: "Фарш из филе лосося", price: 2520},
+    {id: 4, img: "https://ecomarket.ru/imgs/products/21634/thumb/shokolad-dubayskiy-1.jpg ", name: "Шоколад Дубайский", price: 1625},
   ]
 
 
@@ -122,6 +124,19 @@ function App() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <Link to={"/"} className='flex'>
+              <img src="../src/assets/logo.png" alt="" />
+              <p className='font-extrabold text-[48px] '>Eco Energy</p>
+          </Link>
+
+          <div>
+            <p className='font-bold'>@2025. Все права защищены.</p> 
           </div>
         </div>
       </div>

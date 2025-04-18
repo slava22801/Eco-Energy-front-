@@ -1,6 +1,7 @@
 import { Header } from '../components/header';
 import '../App.css'
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 export default function Registration() {
 
@@ -61,9 +62,16 @@ export default function Registration() {
                         <input value={formData.name} onChange={handleChange}  type="text" name='name' placeholder='name' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px] text-start'/>
                         <input value={formData.surname} onChange={handleChange} required type="text" name='surname' placeholder='surname' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px] '/>
                         <input value={formData.email} onChange={handleChange} required type="text" name='email' placeholder='email' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px]'/>
-                        <input value={formData.password} onChange={handleChange} required type="text" name='password' placeholder='password' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px]'/>
+                        <input value={formData.password} onChange={handleChange} required type="password" name='password' placeholder='password' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px]'/>
 
                         <button type="submit" className='mt-[37px] m-auto justify-items-center justify-center border border-[#8F8F8F] rounded-[20px] w-[250px] h-[70px]'>Зарегистрироваться</button>
+
+                        
+                        <div className='block'>
+                        <Link to={"/login"} className='font-bold'>
+                            или войти в профиль
+                        </Link>
+                        </div>
                     </form>
                 </div>
             </div>
