@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Link } from 'react-router';
 
 export default function Registration() {
-
     const [formData, setFormData] = useState('');
 
     const handleChange = (e) => {
@@ -20,7 +19,7 @@ export default function Registration() {
         console.log(formData);
 
         try {
-            const response = await fetch('/user/register', {
+            const response = await fetch(`http:/localhost:8080/user/register`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
