@@ -5,14 +5,15 @@ import './index.css'
 import App from './App.jsx'
 import Registration from './pages/registration.jsx'
 import Admin from './pages/admin.jsx'
-
+import Login from './pages/login.jsx'
 
 
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/register", element: <Registration/>},
-  {path: "/admin", element: <Admin/>}
+  {path: "/admin", element: <Admin/>},
+  {path: "/login", element: <Login/>}
 ]) // Пути сайта (Главная, Регистрация и т.д.)
 
 
