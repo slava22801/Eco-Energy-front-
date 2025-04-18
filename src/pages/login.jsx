@@ -67,11 +67,11 @@ export default function Login() {
                 <h1 className='font-bold text-[45px] text-[#498946] text-center'>Вход в Профиль</h1>
 
                 <div className='flex m-auto justify-items-center justify-center'>
-                    <form onSubmit={handleSubmit}>
+                    <form>
                         <input value={formData.email} onChange={handleChange} required type="text" name='email' placeholder='email' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px] text-start'/>
                         <input value={formData.password} onChange={handleChange} required type="text" name='password' placeholder='password' className='bg-white block mt-[34px] border border-[#8F8F8F] w-[350px] h-[70px] rounded-[20px] text-start'/>
 
-                        <button type="submit" className='mt-[37px] m-auto justify-items-center justify-center border border-[#8F8F8F] rounded-[20px] w-[250px] h-[70px]'>Войти</button>
+                        <button onSubmit={handleSubmit} className='mt-[37px] m-auto justify-items-center justify-center border border-[#8F8F8F] rounded-[20px] w-[250px] h-[70px]'>Войти</button>
                         <div className='block'>
                         <Link to={"/register"} className='font-bold'>
                             Нет аккаунта? Зарегистрироваться
