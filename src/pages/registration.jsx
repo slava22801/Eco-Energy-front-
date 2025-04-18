@@ -14,38 +14,38 @@ export default function Registration() {
         }));
     };
     
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     console.log(formData);
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(formData);
 
-    //     try {
-    //         const response = await fetch(`/user/register`, {
-    //           method: 'POST',
-    //           headers: {
-    //             'Content-Type': 'application/json',
-    //           },
-    //           body: JSON.stringify(formData)
-    //         });
+        try {
+            const response = await fetch(`/user/register`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData)
+            });
       
-    //         if (!response.ok) {
-    //           throw new Error('Ошибка при отправке данных');
-    //         }
+            if (!response.ok) {
+              throw new Error('Ошибка при отправке данных');
+            }
       
-    //         const result = await response.json();
-    //         console.log('Успешно:', result);
-    //         alert("Профиль успешно создан!");
-    //         // Сброс формы после успешной отправки
-    //         setFormData({ 
-    //             name: '',
-    //             surname: '',
-    //             email: '',
-    //             password: '',
-    //             role: '' });
+            const result = await response.json();
+            console.log('Успешно:', result);
+            alert("Профиль успешно создан!");
+            // Сброс формы после успешной отправки
+            setFormData({ 
+                name: '',
+                surname: '',
+                email: '',
+                password: '',
+                role: '' });
             
-    //       } catch (error) {
-    //         console.error('Ошибка:', error);
-    //       }
-    //     };
+          } catch (error) {
+            console.error('Ошибка:', error);
+          }
+        };
 
 
 
