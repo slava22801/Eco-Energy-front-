@@ -24,7 +24,7 @@ export default function Login() {
         console.log(formData);
 
         try {
-            const response = await fetch('http:/localhost:8080/user/login', {
+            const response = await fetch('http://81.31.247.125/user/login', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

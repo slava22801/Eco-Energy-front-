@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 function App() {
   const token = localStorage.getItem('jwt');
   console.log(token);
-
+  console.log(isAuthorized);
   const user = localStorage.getItem('user');
   console.log(user);
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -76,6 +76,7 @@ function App() {
           </div>
          
           <div>
+            
             <Link to={"/register"}>
             <img src="../src/assets/user_icon.svg" alt="Пользователь" />
             <p className='text-center'>Войти</p>
